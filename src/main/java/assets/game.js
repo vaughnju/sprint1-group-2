@@ -33,6 +33,10 @@ var battleship = document.getElementsByClassName("hidden4")[0];
 var vert = document.getElementById("hidden5");
 var instruction1 = document.getElementById("instruction1");
 var pLabel = document.getElementById("pLabel");
+var upArrow = document.getElementById("UA");
+var leftArrow = document.getElementById("LA");
+var downArrow = document.getElementById("DA");
+var rightArrow = document.getElementById("RA");
 
 function myFunction() {
 
@@ -216,6 +220,10 @@ function initGame() {
         shipType = "BATTLESHIP";
        registerCellListener(place(4));
     });
+    document.getElementById("upArrow").addEventListener("click", moveUp);
+    document.getElementById("leftArrow").addEventListener("click", moveLeft);
+    document.getElementById("downArrow").addEventListener("click", moveRight);
+    document.getElementById("rightArrow").addEventListener("click", moveDown);
     sendXhr("GET", "/game", {}, function(data) {
         game = data;
 
