@@ -159,6 +159,24 @@ td:hover {
     height: 100px;
 }
 
+.button {
+    border-radius: 8px;
+    height: 18px;
+    width: 18px;
+}
+.UA {
+    background:url(uparrow.jpg) no-repeat;
+}
+.LA{
+    background:url(leftarrow.jpg) no-repeat;
+}
+.dDA{
+    background:url (downarrow.jpg) no-repeat;
+}
+.RA{
+    background:url (rightarrow.jpg) no-repeat;
+}
+
 .hidden4 {
     display: inline;
     background:url(battleship3.JPG) no-repeat;
