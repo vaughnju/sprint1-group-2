@@ -3,25 +3,25 @@
 
 #player{
 
-  float: left;
+    float: left;
     border: 1px solid black;
     border-spacing: 0px;
 }
 
 #player tr {
-  /*display: inline;*/
+    /*display: inline;*/
     border: 1px solid black;
     height: 32px;
 }
 
 #player td {
-  /*display: inline;*/
+    /*display: inline;*/
     border: 1px solid black;
     width: 32px;
 }
 
 #opponent{
-  float:left;
+    float:left;
     border: 1px solid red;
     border-spacing: 0px;
     margin-right: 20px;
@@ -120,7 +120,7 @@ td:hover {
 }
 
 #instruction2{
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 #show_opponent
@@ -129,14 +129,14 @@ td:hover {
 }
 
 #oLabel {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 #pLabel {
-  padding-bottom: 1px;
-  display:block;
-  font-size: 20px;
-  margin-bottom: 0;
+    padding-bottom: 1px;
+    display:block;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 .hidden2 {
@@ -167,16 +167,27 @@ td:hover {
     width: 300px;
     height: 100px;
 }
+.hidden6 {
+    display: inline;
+    background:url(Submarine.JPG) no-repeat;
+    cursor:pointer;
+    border:none;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    left:25%;
+
+}
 
 ul{
     list-style-type: none;
 }
 
 h1 {
-  float: right;
-  font-family: impact;
-  font-size: 100px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 100px;
+    float: right;
+    font-family: impact;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 100px;
 }
