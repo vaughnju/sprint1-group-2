@@ -169,14 +169,14 @@ td:hover {
 }
 .hidden6 {
     display: inline;
+    /*position:absolute;*/
+    left:500px;
+    /*display: inline;*/
     background:url(Submarine.JPG) no-repeat;
     cursor:pointer;
     border:none;
     width: 300px;
     height: 200px;
-    position: relative;
-    left:25%;
-
 }
 
 ul{
