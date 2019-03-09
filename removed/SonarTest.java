@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class BoardTest {
+public class SonarTest {
 
     private Board board;
 
@@ -22,7 +22,7 @@ public class BoardTest {
         assertTrue(board.placeShip(new Ship("BATTLESHIP"), 5, 'D', true));
         assertTrue(board.placeShip(new Ship("DESTROYER"), 6, 'A', false));
         //call sonarpulse function, assert false
-        assertFalse(sonarpulse(4,'C');
+        assertFalse(sonarpulse(4,'C'));
         //sink minesweeper
         minesweeper.attack(1,'A');
         var result = minesweeper.attack(2,'A');
