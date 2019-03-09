@@ -83,4 +83,18 @@ public class BoardTest {
         assertFalse(board.placeShip(new Ship(""), 8, 'A', false));
 
     }
+
+    @Test
+    public void hitCaptainMinesweeper() {
+        assertTrue(board.placeShip(new Ship("MINESWEEPER"), 3, 'H', true));
+        assertTrue(board.placeShip(new Ship("DESTROYER"), 3, 'G', true));
+        var firstShot = board.attack(3, 'H');
+        assertEquals(AtackStatus.HIT, firstShot.getResult());
+
+        firstShot = board.attack(4, 'H');
+        assertEquals(AtackStatus.SUNK, firstShot.getResult());
+
+        //secondShot = board.attack(4, 'H');
+        //assertEquals(AtackStatus.INVALID, secondShot.getResult());
+    }
 }

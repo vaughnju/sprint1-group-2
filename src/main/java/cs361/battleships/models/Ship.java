@@ -82,12 +82,11 @@ public class Ship {
 		attackedSquare.hit();
 		var result = new Result(attackedLocation);
 		result.setShip(this);
+		result.setResult(AtackStatus.HIT);
 		if (isSunk()) {
 			result.setResult(AtackStatus.SUNK);
-		} else {
-			result.setResult(AtackStatus.HIT);
 		}
-		return result;
+    return result;
 	}
 
 	@JsonIgnore
