@@ -70,7 +70,7 @@ public class Game {
                 sinked++;
             }
         }
-        if(sinked => 2){
+        if(sinked >= 2){
             for(var s in Ship){
                 if(s.isVertical == true){
                     if(s.x < max){
